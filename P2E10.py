@@ -38,9 +38,9 @@ print("El promedio general del curso es:", round(promedio_general,2))
 
 #Busco al estudiante con mejor promedio, utilizando la función max sobre mi diccionario de promedios.
 clave_max, valor_max = max(promedios.items(), key=lambda x: x[1])
-print('El estudiante con mayor promedio es:', clave_max)
+print('El estudiante con mayor promedio es:', clave_max, "con", valor_max)
 
 #Busco al estudiante con la peor nota, aplicando una función lambda que devuelva el mínimo de cada alumno
 #Y así poder encontrar el mínimo general y a que clave pertenece.
 clave_min, valor_min = min(diccionario.items(), key=lambda x: min(x[1]))
-print('El estudiante con menor nota es:', clave_min)
+print('El estudiante con menor nota es:', clave_min, "con", min(valor_min[:]))
